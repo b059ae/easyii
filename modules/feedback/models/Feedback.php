@@ -37,7 +37,7 @@ class Feedback extends \yii\easyii\components\ActiveRecord
             [['name','title', 'text'], EscapeValidator::className()],
             ['title', 'string', 'max' => 128],
             ['email', 'email'],
-            ['phone', 'match', 'pattern' => '/^[\d\s-\+\(\)]+$/'],
+            ['phone', 'match', 'pattern' => '/^[\d\s\-\+\(\)]+$/'],
             ['reCaptcha', ReCaptchaValidator::className(), 'when' => function($model){
                 return $model->isNewRecord && FeedbackModule::setting('enableCaptcha');
             }],
