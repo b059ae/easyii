@@ -70,7 +70,7 @@ class Guestbook extends \yii\easyii\components\ActiveRecord
             'title' => Yii::t('easyii', 'Title'),
             'email' => 'E-mail',
             'text' => Yii::t('easyii', 'Text'),
-            'answer' => Yii::t('easyii/guestbook', 'Answer'),
+            'answer' => Yii::t('easyii', 'Answer'),
             'reCaptcha' => Yii::t('easyii', 'Anti-spam check')
         ];
     }
